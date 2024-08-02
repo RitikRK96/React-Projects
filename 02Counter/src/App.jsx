@@ -6,7 +6,19 @@ function App() {
   // let counter = 5;
   var [counter, setCounter] = useState(15)
   const addValue = () => {
-    setCounter(counter + 1)
+    // this will only change the value once
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // counter = 16 after increment
+    
+    // Using function you can update the code as many time as called
+    setCounter(counter => counter + 1)
+    setCounter(counter => counter + 1)
+    setCounter(counter => counter + 1)
+    setCounter(counter => counter + 1)
+    // counter = 19 after increment
+  
   }
 
   const removeValue = () => {
@@ -21,7 +33,7 @@ function App() {
       <button onClick={addValue}>Add Value to {counter}</button> <br/> <br/>
       <button onClick={removeValue}>Remove Value from {counter}</button> 
       <br/> <br/>
-      <footer>Footer: {counter}</footer>
+      <h2>Footer: {counter}</h2>
     </>
   )
 }
