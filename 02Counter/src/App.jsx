@@ -4,7 +4,7 @@ import { useState } from 'react';
 function App() {
 
   // let counter = 5;
-  var [counter, setCounter] = useState(15)
+  var [counter, setCounter] = useState(5)
   const addValue = () => {
     // this will only change the value once
     // setCounter(counter + 1)
@@ -14,9 +14,9 @@ function App() {
     
     // Using function you can update the code as many time as called
     setCounter(counter => counter + 1)
-    setCounter(counter => counter + 1)
-    setCounter(counter => counter + 1)
-    setCounter(counter => counter + 1)
+    // setCounter(counter => counter + 1)
+    // setCounter(counter => counter + 1)
+    // setCounter(counter => counter + 1)
     // counter = 19 after increment
   
   }
