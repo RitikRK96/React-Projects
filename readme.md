@@ -1,6 +1,6 @@
 ## Create package
     npx create-react-app Appname
-    
-### useState
+
+## useState
     var [counter, setCounter] = useState(5)
     - update the variable counter using setCounter function
